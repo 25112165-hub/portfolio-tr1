@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+:root {
+    --butter-yellow: #FEF9E7; /* Vàng bơ nhạt */
+    --butter-dark: #F9E79F;   /* Vàng bơ đậm */
+    --pink-pastel: #FFD1DC;   /* Hồng Pastel */
+    --pink-dark: #FADBD8;
+    --text-color: #5D4037;    /* Nâu trầm dịu mắt */
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: var(--butter-yellow);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px 10px;
+}
+
+/* Khung chứa 1 khổ dọc */
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #8D6E63;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Thiết kế Card */
+.card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(255, 209, 220, 0.25);
+    margin-bottom: 25px;
+    border: 3px solid var(--pink-pastel);
+}
+
+.card h3 {
+    color: #8D6E63;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Bảng thông tin trang 1 */
+.profile-info {
+    width: 100%;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--pink-pastel);
+}
+
+.info-row span:first-child {
+    font-weight: 700;
+    color: #A1887F;
+}
+
+/* Thẻ bài tập trang 2 */
+.card-tag {
+    display: inline-block;
+    background: var(--pink-dark);
+    color: var(--text-color);
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Nút mở PDF */
+.download-box {
+    background: #FFFDF6;
+    border: 1px solid var(--pink-pastel);
+    border-radius: 14px;
+    padding: 12px 18px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download-box p {
+    margin: 0;
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+.btn-pdf {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--pink-pastel);
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+
+.btn-pdf:hover {
+    background: var(--butter-dark);
+    transform: scale(1.03);
+}
+
+/* Footer tối giản */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    color: #A1887F;
+}
